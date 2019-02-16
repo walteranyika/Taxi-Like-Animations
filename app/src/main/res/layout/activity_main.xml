@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.walter.taxilikeanims.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:id="@+id/linearLayoutRequest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/btnRequest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#000"
+                    android:text="@string/request_text"
+                    android:textColor="#fff"/>
+            </LinearLayout> <!--request layout-->
+
+            <LinearLayout
+                android:visibility="gone"
+                android:padding="16sp"
+                android:id="@+id/linearLayoutEstimates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginBottom="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Distance of 6.0Km"/>
+
+                <TextView
+                    android:layout_marginBottom="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Service: 12000 Litres"/>
+
+                <TextView
+                    android:layout_marginBottom="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Time: 10 Minutes"/>
+
+                <TextView
+                    android:layout_marginBottom="12dp"
+                    android:textStyle="bold"
+                    android:textColor="#0d0c0c"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total KES 3500"/>
+
+
+                <Button
+                    android:id="@+id/btnConfirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#000"
+                    android:text="Confirm"
+                    android:textColor="#fff"/>
+
+            </LinearLayout> <!--Estimates Layout-->
+
+            <LinearLayout
+                android:visibility="gone"
+                android:padding="16sp"
+                android:id="@+id/linearLayoutDriver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginBottom="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="John Mark"/>
+
+                <TextView
+                    android:layout_marginBottom="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0723444555"/>
+
+                <TextView
+                    android:layout_marginBottom="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rating 4.5/5"/>
+
+                <TextView
+                    android:layout_marginBottom="12dp"
+                    android:textStyle="bold"
+                    android:textColor="#0d0c0c"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="KAK 619J"/>
+
+
+                <Button
+                    android:id="@+id/btnDriverCall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#000"
+                    android:text="Call"
+                    android:textColor="#fff"/>
+
+            </LinearLayout> <!--Estimates Layout-->
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>
